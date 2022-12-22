@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <h1 className="text-xl font-bold">Main content</h1>
       <img className="w-20" src="" />
-      <p>asdfasdf</p>
+      <p></p>
     </div>
   );
 }
