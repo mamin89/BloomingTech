@@ -5,7 +5,7 @@ import Login from "./pages/login";
 import Signup from "./pages/signup";
 import ProgressTracker from "./pages/progress-tracker";
 import Resources from "./pages/Resources";
-
+import Log from "./pages/log";
 function App() {
   return (
     // Swap between home, login, signup, pt depending on the url
@@ -21,6 +21,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/Resources" element={<Resources />} />
             <Route path="/progress-tracker" element={<ProgressTracker />} />
+            <Route path="/logs/:id" element={<Log />} />
           </Routes>
         </div>
       </div>

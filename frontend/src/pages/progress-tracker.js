@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 const API_HOST = "";
 
 export default function ProgressTracker() {
@@ -92,7 +93,9 @@ export default function ProgressTracker() {
           <tbody>
             {logs.map((log) => (
               <tr>
-                <td className="text-left">{log.title}</td>
+                <td className="text-left">
+                  <Link to={`/logs/${log._id}`}>{log.title}</Link>
+                </td>
                 <td className="text-left">{log.date}</td>
                 <td className="text-left flex gap-x-2">
                   <button onClick={() => edit(log)}>Edit</button>
