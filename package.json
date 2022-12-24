@@ -4,7 +4,7 @@
   "description": "",
   "main": "./frontend/server.js",
   "scripts": {
-    "prod-build": "cd frontend && npm run build",
+    "prod-build": "cd frontend && && npm i && npm run build",
     "prod-start": "cd backend && node server.js"
   },
   "repository": {
