@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
 const app = express();
 const path = require("path");
 const port = process.env.PORT || 3001;
@@ -71,7 +72,5 @@ app.get("*", (req, res) => {
 
 app.listen(port, async () => {
   console.log(`Example app listening on port ${port}`);
-  await mongoose.connect(
-    "mongodb+srv://mamin89:Cycle30@cycle-30-cluster.enucpaz.mongodb.net/BloomingTech?retryWrites=true&w=majority"
-  );
+  await mongoose.connect(process.env.MONGODB_URL);
 });
