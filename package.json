@@ -1,0 +1,20 @@
+{
+  "name": "bloomingtech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./frontend/server.js",
+  "scripts": {
+    "prod-build": "cd frontend && npm run build",
+    "prod-start": "cd backend && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamin89/BloomingTech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mamin89/BloomingTech/issues"
+  },
+  "homepage": "https://github.com/mamin89/BloomingTech#readme"
+}
