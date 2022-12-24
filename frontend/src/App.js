@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
 import ProgressTracker from "./pages/progress-tracker";
+import Resources from "./pages/Resources";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/Resources" element={<Resources />} />
             <Route path="/progress-tracker" element={<ProgressTracker />} />
           </Routes>
         </div>

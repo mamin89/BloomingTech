@@ -4,9 +4,24 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div>
-      <h1 className="text-xl font-bold">Main content</h1>
-      <img className="w-20" src="" />
-      <p></p>
+      <h1 className="text-xl font-bold bg-red-500 mb-2 rounded-xl">
+        BloomingTech
+      </h1>
+      <img
+        className="w-100 h-80 mb-6 mx-auto"
+        src="https://i.ytimg.com/vi/GokN-50Jt4A/maxresdefault.jpg"
+      />
+      <p>
+        As a company grows communication becomes its biggest challenge. The
+        Mission of BloomingTech is to create a platform for Project Managers,
+        Scrum Masters, and Developers allowing them to bridge the gap between
+        clarity and confusion via this simple yet effective platform. This
+        application will allow each team member to log their daily progress
+        along with any challenges and/or suggestions consenting them to
+        interrelate with other team members enabling them to overcome any
+        challenges and deliver finished products within a timely manner for best
+        client(s) satisfaction.
+      </p>
     </div>
   );
 }

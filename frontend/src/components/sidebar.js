@@ -8,7 +8,7 @@ export default function Sidebar() {
         <Link to="/">About</Link>
       </li>
       <li className="p-2">
-        <Link to="/">Resources</Link>
+        <Link to="/resources">Resources</Link>
       </li>
       <li className="p-2">
         <Link to="/">Tech News</Link>
