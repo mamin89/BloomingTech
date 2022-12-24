@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-const API_HOST = "http://localhost:3001";
+const API_HOST = "";
 
 export default function ProgressTracker() {
   const [id, setId] = useState();

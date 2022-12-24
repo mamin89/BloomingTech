@@ -1,9 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const port = 3001;
+const path = require("path");
+const port = process.env.PORT || 3001;
 const Log = require("./models/Log");
 var cors = require("cors");
+// Serve static files from the React app
+app.use(express.static(path.join("../frontend/build")));
 
 app.use(cors());
 app.use(express.json());
@@ -58,6 +61,12 @@ app.post("/logs", async (req, res) => {
   const params = req.body;
   const log = await Log.create(params);
   res.json(log);
+});
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get("*", (req, res) => {
+  res.sendFile(path.join("../frontend/build/index.html"));
 });
 
 app.listen(port, async () => {
