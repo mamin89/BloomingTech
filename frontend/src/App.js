@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
 import ProgressTracker from "./pages/progress-tracker";
+import ContactUs from "./pages/contactUs";
 import Resources from "./pages/Resources";
 import Log from "./pages/log";
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/Resources" element={<Resources />} />
             <Route path="/progress-tracker" element={<ProgressTracker />} />
+            <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/logs/:id" element={<Log />} />
           </Routes>
         </div>

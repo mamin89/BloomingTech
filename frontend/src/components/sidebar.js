@@ -17,7 +17,7 @@ export default function Sidebar() {
         <Link to="/progress-tracker">Progress Tracker</Link>
       </li>
       <li className="p-2">
-        <Link to="/">Contact Us</Link>
+        <Link to="/contact-us">Contact Us</Link>
       </li>
       <li className="p-2">
         <Link to="/login">Login</Link>

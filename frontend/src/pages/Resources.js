@@ -8,31 +8,31 @@ export default function Resources() {
       <ul>
         <li>
           <a href="https://www.youtube.com/watch?v=NmC0GtHj_4w">
-            Youtube Video
+          https://www.youtube.com/watch?v=NmC0GtHj_4w
           </a>
         </li>
         <li>
-          <a href="https://kleki.com/">a</a>
+          <a href="https://kleki.com/">project planning</a>
         </li>
         <li>
           <a href="https://tailwind-elements.com/docs/standard/components/tables/">
-            b
+            Styling
           </a>
         </li>
         <li>
-          <a href="https://expressjs.com/en/starter/hello-world.html">v</a>
+          <a href="https://expressjs.com/en/starter/hello-world.html">Express </a>
         </li>
         <li>
-          <a href="https://www.w3schools.com/html/html_scripts.asp">a</a>
+          <a href="https://www.w3schools.com/html/html_scripts.asp">w3schools</a>
         </li>
         <li>
-          <a href="https://www.postman.com/">a</a>
+          <a href="https://www.postman.com/">Backend Help</a>
         </li>
         <li>
-          <a href="https://www.mongodb.com/atlas/database">a</a>
+          <a href="https://www.mongodb.com/atlas/database">MongoDB</a>
         </li>
         <li>
-          <a href="https://mongoosejs.com/docs/guide.html">along</a>
+          <a href="https://mongoosejs.com/docs/guide.html">Mongo Docs Guide</a>
         </li>
       </ul>
     </div>
