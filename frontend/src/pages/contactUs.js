@@ -3,8 +3,13 @@ import React from "react";
 function ContactUs() {
   return (
     <div>
-      contact IT Help Desk
-      <h1>Phone Number: 800-GET-HELP E-MAIL: HELPDESK@BloomingTech.com</h1>
+      Contact IT Help Desk
+      <div>
+        <span class="font-semibold">Phone Number:</span> 800-GET-HELP
+      </div>
+      <div>
+        <span class="font-semibold"> E-MAIL:</span> HELPDESK@BloomingTech.com
+      </div>
     </div>
   );
 }
