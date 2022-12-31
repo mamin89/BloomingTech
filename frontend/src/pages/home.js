@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Home({ user }) {
   return (
     <div>
+      {user ? <h1>You are currently logged in as {user.email}</h1> : null}
       <h1 className="text-xl font-bold bg-red-500 mb-2 rounded-xl">
         BloomingTech
       </h1>

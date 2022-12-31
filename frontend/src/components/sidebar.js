@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export default function Sidebar() {
+export default function Sidebar({ setUser }) {
+  const navigate = useNavigate();
   return (
     <ul>
       <li className="p-2">
@@ -24,6 +26,17 @@ export default function Sidebar() {
       </li>
       <li className="p-2">
         <Link to="/signup">Sign up</Link>
+      </li>
+      <li className="p-2">
+        <button
+          onClick={() => {
+            localStorage.removeItem("user");
+            setUser();
+            navigate("/");
+          }}
+        >
+          Logout
+        </button>
       </li>
     </ul>
   );

@@ -5,6 +5,7 @@ const app = express();
 const path = require("path");
 const port = process.env.PORT || 3001;
 const Log = require("./models/Log");
+const User = require("./models/User");
 var cors = require("cors");
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "/../frontend/build")));
@@ -62,6 +63,26 @@ app.post("/logs", async (req, res) => {
   const params = req.body;
   const log = await Log.create(params);
   res.json(log);
+});
+
+/**
+ * Create
+ * POST /users
+ */
+app.post("/users", async (req, res) => {
+  const params = req.body;
+  const user = await User.create(params);
+  res.json(user);
+});
+
+/**
+ * Create session. Looks for a user with a matching email and password.
+ * POST /login
+ */
+app.post("/login", async (req, res) => {
+  const { email, password } = req.body; // { email: "...", password: "..." }
+  const user = await User.findOne({ email, password });
+  res.json(user);
 });
 
 // The "catchall" handler: for any request that doesn't
