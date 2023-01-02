@@ -12,6 +12,6 @@
 
 ## Would like to add
 
-- Authentication
-- Tech News using an API
 - Be able to attch files to logs
+- update the style
+
