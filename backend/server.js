@@ -6,11 +6,12 @@ const path = require("path");
 const port = process.env.PORT || 3001;
 const Log = require("./models/Log");
 const User = require("./models/User");
-var cors = require("cors");
+var cors = require("cors"); 
+
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "/../frontend/build")));
 
-app.use(cors());
+app.use(cors()); // <=  allows for certain accesses to  use our API routes)
 app.use(express.json());
 
 /**
