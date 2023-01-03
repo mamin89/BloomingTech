@@ -13,7 +13,7 @@ export default function Home({ user }) {
         src="https://blogs.vmware.com/networkvirtualization/files/2020/10/632481-modern-network-vmware-blog-965x545.jpg"
         // src="https://i.ytimg.com/vi/GokN-50Jt4A/maxresdefault.jpg"
       />
-      <p className="bg-#c4b5fd-500 ">
+      <p className="bg-[#c4b5fd] ">
         As a company grows communication becomes its biggest challenge. The
         Mission of BloomingTech is to create a platform for Project Managers,
         Scrum Masters, and Developers allowing them to bridge the gap between
