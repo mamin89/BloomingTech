@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Sidebar({ setUser, user }) {
   const navigate = useNavigate();
   return (
-    <ul className="text-red-500 text-lg">
+    <ul className="text-purple-500 text-lg">
       <li className="p-2">
         <Link to="/">About</Link>
       </li>
