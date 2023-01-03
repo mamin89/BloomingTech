@@ -10,7 +10,8 @@ export default function Home({ user }) {
       </h1>
       <img
         className="w-100 h-80 mb-6 mx-auto"
-        src="https://i.ytimg.com/vi/GokN-50Jt4A/maxresdefault.jpg"
+        src="https://blogs.vmware.com/networkvirtualization/files/2020/10/632481-modern-network-vmware-blog-965x545.jpg"
+        // src="https://i.ytimg.com/vi/GokN-50Jt4A/maxresdefault.jpg"
       />
       <p>
         As a company grows communication becomes its biggest challenge. The
