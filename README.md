@@ -16,4 +16,6 @@ As a company grows communication becomes its biggest challenge. The Mission of B
 
 - Be able to attch files to logs
 - update the style
+- News API
+- The User name when they create a log
 
